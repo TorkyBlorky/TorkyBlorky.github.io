@@ -4,27 +4,10 @@
     <meta charset="utf-8">
     <title>Enigma Machine</title>
     <script src="./libraries/processing.js"></script>
-    <script type="text/processing" data-processing-target="test">
-
-    void setup(){
-      size(200,200);
-      background(125);
-      fill(255);
-      noLoop();
-      PFont fontA = loadFont("courier");
-      textFont(fontA, 14);
-    }
-
-    void draw(){
-      text("hello",20,20);
-      println("Yes");
-    }
-
-    </script>
   </head>
   <body>
     <h1>Enigma Machine!</h1>
-    <canvas id="test"></canvas>
+    <canvas data-processing-sources="enigma.js"></canvas>
     <p>By TorkyBlorky</p>
   </body>
 </html>
