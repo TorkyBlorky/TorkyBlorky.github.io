@@ -4,13 +4,27 @@
     <meta charset="utf-8">
     <title>Enigma Machine</title>
     <script src="./libraries/processing.js"></script>
-    <script type="text/javascript">
-      function getProcessingSketchId() { return 'enigma'; }
+    <script type="text/javascript" data-processing-target="test">
+
+    void setup(){
+      size(200,200);
+      background(125);
+      fill(255);
+      noLoop();
+      PFont fontA = loadFont("courier");
+      textFont(fontA, 14);
+    }
+
+    void draw(){
+      text("hello",20,20);
+      println("Yes");
+    }
+
     </script>
   </head>
   <body>
     <h1>Enigma Machine!</h1>
-    <canvas data-processing-sources="enigma.js"></canvas>
+    <canvas id="test"></canvas>
     <p>By TorkyBlorky</p>
   </body>
 </html>
